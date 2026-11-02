@@ -8,6 +8,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="templatemo-nexaverse.css">
+    <style>
+        /* Animação suave de brilho contínuo na logo */
+        @keyframes neonPulse {
+            0%, 100% {
+                filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.4)) drop-shadow(0 0 15px rgba(255, 0, 212, 0.3));
+                opacity: 0.85;
+            }
+            50% {
+                filter: drop-shadow(0 0 18px rgba(0, 240, 255, 0.8)) drop-shadow(0 0 30px rgba(255, 0, 212, 0.6));
+                opacity: 1;
+            }
+        }
+        .logo svg {
+            animation: neonPulse 3s ease-in-out infinite;
+            width: 120px !important;
+            height: 120px !important;
+        }
+        .logo {
+            width: 120px !important;
+            height: 120px !important;
+            margin: 0 auto 20px !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -37,29 +60,25 @@
                             <stop offset="0%" style="stop-color:#00f0ff"/>
                             <stop offset="100%" style="stop-color:#ff00d4"/>
                         </linearGradient>
-                        <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-                            <feGaussianBlur stdDeviation="3" result="blur" />
-                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                        </filter>
                     </defs>
                     <!-- Antena do Robô -->
                     <line x1="50" y1="20" x2="50" y2="8" stroke="url(#robotGrad)" stroke-width="3" stroke-linecap="round"/>
-                    <circle cx="50" cy="6" r="4" fill="url(#robotGrad)" filter="url(#neonGlow)"/>
+                    <circle cx="50" cy="6" r="4" fill="url(#robotGrad)"/>
                     
                     <!-- Cabeça do Robô -->
-                    <rect x="25" y="20" width="50" height="42" rx="12" fill="none" stroke="url(#robotGrad)" stroke-width="3" filter="url(#neonGlow)"/>
+                    <rect x="22" y="18" width="56" height="46" rx="14" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
                     
                     <!-- Orelhas / Detalhes Laterais -->
-                    <rect x="18" y="32" width="7" height="18" rx="3" fill="url(#robotGrad)"/>
-                    <rect x="75" y="32" width="7" height="18" rx="3" fill="url(#robotGrad)"/>
+                    <rect x="15" y="30" width="7" height="20" rx="3" fill="url(#robotGrad)"/>
+                    <rect x="78" y="30" width="7" height="20" rx="3" fill="url(#robotGrad)"/>
                     
                     <!-- Visor / Olhos -->
-                    <rect x="33" y="30" width="34" height="14" rx="4" fill="#0a0a12" stroke="url(#robotGrad)" stroke-width="2"/>
-                    <circle cx="43" cy="37" r="3" fill="#00f0ff" filter="url(#neonGlow)"/>
-                    <circle cx="57" cy="37" r="3" fill="#ff00d4" filter="url(#neonGlow)"/>
+                    <rect x="30" y="28" width="40" height="16" rx="5" fill="#0a0a12" stroke="url(#robotGrad)" stroke-width="2"/>
+                    <circle cx="41" cy="36" r="3.5" fill="#00f0ff"/>
+                    <circle cx="59" cy="36" r="3.5" fill="#ff00d4"/>
                     
                     <!-- Boca / Detalhe frontal -->
-                    <line x1="42" y1="52" x2="58" y2="52" stroke="url(#robotGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="40" y1="52" x2="60" y2="52" stroke="url(#robotGrad)" stroke-width="3" stroke-linecap="round"/>
                 </svg>
             </div>
             <h1 class="brand-name">BigPages</h1>
@@ -101,9 +120,9 @@
                 <div class="section-header-small">
                     <div class="small-logo">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="20" width="50" height="42" rx="12" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
-                            <circle cx="43" cy="37" r="3" fill="#00f0ff"/>
-                            <circle cx="57" cy="37" r="3" fill="#ff00d4"/>
+                            <rect x="22" y="18" width="56" height="46" rx="14" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
+                            <circle cx="41" cy="36" r="3.5" fill="#00f0ff"/>
+                            <circle cx="59" cy="36" r="3.5" fill="#ff00d4"/>
                         </svg>
                     </div>
                     <div class="small-brand">
@@ -209,7 +228,7 @@
                 <div class="section-header-small">
                     <div class="small-logo">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="20" width="50" height="42" rx="12" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
+                            <rect x="22" y="18" width="56" height="46" rx="14" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
                         </svg>
                     </div>
                     <div class="small-brand">
@@ -381,7 +400,7 @@
                 <div class="section-header-small">
                     <div class="small-logo">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="20" width="50" height="42" rx="12" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
+                            <rect x="22" y="18" width="56" height="46" rx="14" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
                         </svg>
                     </div>
                     <div class="small-brand">
@@ -454,7 +473,7 @@
                 <div class="section-header-small">
                     <div class="small-logo">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="20" width="50" height="42" rx="12" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
+                            <rect x="22" y="18" width="56" height="46" rx="14" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
                         </svg>
                     </div>
                     <div class="small-brand">
@@ -526,7 +545,7 @@
                 <div class="section-header-small">
                     <div class="small-logo">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="20" width="50" height="42" rx="12" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
+                            <rect x="22" y="18" width="56" height="46" rx="14" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
                         </svg>
                     </div>
                     <div class="small-brand">
@@ -559,7 +578,7 @@
                 <div class="section-header-small">
                     <div class="small-logo">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="25" y="20" width="50" height="42" rx="12" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
+                            <rect x="22" y="18" width="56" height="46" rx="14" fill="none" stroke="url(#robotGrad)" stroke-width="3"/>
                         </svg>
                     </div>
                     <div class="small-brand">
