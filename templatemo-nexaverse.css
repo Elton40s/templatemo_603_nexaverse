@@ -1188,3 +1188,43 @@ body {
 	.service-row { flex-direction: column; text-align: center; }
 	.testimonials-grid { grid-template-columns: 1fr; }
 }
+
+/* ========================================================== */
+/* ESTILOS DA NOVA LOGO PROFISSIONAL (BIGPAGES)                */
+/* ========================================================== */
+
+.logo-container {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.professional-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px var(--glow-cyan)) drop-shadow(0 0 30px var(--glow-magenta));
+    transition: all 0.4s ease;
+}
+
+.logo-container:hover .professional-logo {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 25px var(--glow-cyan)) drop-shadow(0 0 45px var(--glow-magenta));
+}
+
+/* Ajuste da logo pequena nos cabeçalhos internos */
+.section-header-small .small-logo {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header-small .small-logo .professional-logo {
+    filter: drop-shadow(0 0 8px var(--glow-cyan));
+}
