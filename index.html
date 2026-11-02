@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigPages - Soluções em Landing Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-nexaverse.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Carregando BigPages...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00f0ff"/>
+                            <stop offset="100%" style="stop-color:#ff00d4"/>
+                        </linearGradient>
+                    </defs>
+                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3"/>
+                    <circle cx="50" cy="50" r="6" fill="url(#logoGradient)"/>
+                </svg>
+            </div>
+            <h1 class="brand-name">BigPages</h1>
+            <p class="tagline">Soluções em Landing Pages de Alta Conversão</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="introduction">
+                <div class="menu-badge">IN</div>
+                <div class="menu-title">Início</div>
+            </div>
+            <div class="menu-item initial-load" data-section="services">
+                <div class="menu-badge">SV</div>
+                <div class="menu-title">Serviços</div>
+            </div>
+            <div class="menu-item initial-load" data-section="gallery">
+                <div class="menu-badge">GL</div>
+                <div class="menu-title">Portfólio</div>
+            </div>
+            <div class="menu-item initial-load" data-section="testimonials">
+                <div class="menu-badge">TM</div>
+                <div class="menu-title">Depoimentos</div>
+            </div>
+            <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">AB</div>
+                <div class="menu-title">Quem Somos</div>
+            </div>
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">CT</div>
+                <div class="menu-title">Contato</div>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="contentArea">
+            <!-- Introduction Section -->
+            <div class="content-section" id="introduction">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>BIGPAGES</h3>
+                        <p>Landing Pages</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Voltar ao Menu</button>
+                
+                <!-- Hero Banner -->
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        <span class="intro-badge">Fundada em 2022</span>
+                        <h1 class="intro-headline">Transformamos Visitantes<br><span>Em Clientes Reais</span></h1>
+                        <p class="intro-subtext">Produzimos e desenvolvemos soluções completas em landing pages de alta performance para empresas e pessoas físicas que desejam vender mais.</p>
+                        <div class="intro-cta-group">
+                            <button class="intro-cta-primary" onclick="showSection('services')">Nossos Serviços</button>
+                            <button class="intro-cta-secondary" onclick="showSection('contact')">Falar no WhatsApp</button>
+                        </div>
+                    </div>
+                    <div class="intro-hero-visual">
+                        <div class="intro-floating-card card-1">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-text">Carregamento Rápido</span>
+                        </div>
+                        <div class="intro-floating-card card-2">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-text">Foco em Conversão</span>
+                        </div>
+                        <div class="intro-floating-card card-3">
+                            <span class="card-icon">📱</span>
+                            <span class="card-text">100% Responsivo</span>
+                        </div>
+                        <div class="intro-orb"></div>
+                    </div>
+                </div>
+
+                <!-- Metrics Strip -->
+                <div class="intro-metrics">
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="150">0</span>
+                        <span class="metric-label">Projetos Entregues</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="99">0</span>
+                        <span class="metric-suffix">%</span>
+                        <span class="metric-label">Satisfação dos Clientes</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="4">0</span>
+                        <span class="metric-label">Anos de Experiência</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-label">Suporte Dedicado</span>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="intro-values">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <h3>Design Estratégico</h3>
+                        <p>Cada elemento da sua landing page é planejado para reter a atenção do usuário e direcioná-lo diretamente para a ação de compra ou contato.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <h3>Performance Extrema</h3>
+                        <p>Páginas leves e otimizadas para carregar instantaneamente em qualquer dispositivo, evitando a perda de potenciais clientes.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <h3>Foco em Resultados</h3>
+                        <p>Nosso compromisso é entregar ferramentas robustas que potencializem as vendas e o posicionamento da sua marca no digital.</p>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Preview -->
+                <div class="intro-tech">
+                    <p class="tech-label">Tecnologias e Ferramentas que Dominamos</p>
+                    <div class="tech-marquee">
+                        <div class="tech-track">
+                            <span class="tech-item">HTML5 & CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">High Conversion UI</span>
+                            <span class="tech-item">Mobile First</span>
+                            <span class="tech-item">SEO Otimizado</span>
+                            <span class="tech-item">Figma</span>
+                            <span class="tech-item">HTML5 & CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="content-section" id="services">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad2)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad2)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>BIGPAGES</h3>
+                        <p>Landing Pages</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Voltar ao Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <p class="section-subtitle">Soluções completas para alavancar suas vendas online</p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab(this, 'landingpages')">Landing Pages</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'design')">Design & UI</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'performance')">Performance</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'suporte')">Suporte</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="landingpages">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/ai-optimized-templates.jpg" alt="Páginas de Vendas">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Páginas de Vendas (VSL / Checkout)</h4>
+                                        <p>Estruturas persuasivas focadas em conversão máxima para lançamentos, infoprodutos ou produtos físicos.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/coding-screen.jpg" alt="Captação de Leads">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Páginas de Capt captura (Leads)</h4>
+                                        <p>Colete contatos qualificados de forma eficiente para campanhas de e-mail marketing e lançamentos.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/ai-mobile-app.jpg" alt="Páginas Institucionais">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Mini Sites e Institucionais</h4>
+                                        <p>Apresente sua empresa ou seu perfil profissional com sofisticação, credibilidade e velocidade.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="design">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/design-screen.jpg" alt="UI/UX Exclusivo">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>UI/UX Exclusivo</h4>
+                                        <p>Interfaces modernas, limpas e desenhadas sob medida para refletir a identidade visual do seu negócio.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/brand-identity.jpg" alt="Identidade Visual">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Identidade Visual</h4>
+                                        <p>Elementos gráficos, paletas de cores e tipografia alinhados para fortalecer o reconhecimento da sua marca.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/motion-design.jpg" alt="Responsividade">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Design 100% Responsivo</h4>
+                                        <p>Perfeitamente adaptado para celulares, tablets e computadores, garantindo excelente experiência em qualquer tela.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="performance">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/digital-strategy.jpg" alt="Otimização SEO">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Otimização SEO e Velocidade</h4>
+                                        <p>Páginas ultrarrápidas que carregam em milissegundos, melhorando o posicionamento e a taxa de conversão.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/tech-audit.jpg" alt="Integrações de Pixels">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Integração de Pixels e Rastreamento</h4>
+                                        <p>Configuração completa de Pixel do Meta (Facebook/Instagram), Google Ads e ferramentas de análise.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/process-optimized.jpg" alt="Automação">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Links com WhatsApp</h4>
+                                        <p>Botões de chamada para ação integrados diretamente com o seu WhatsApp para atendimento imediato.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="suporte">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/247-support.jpg" alt="Suporte Técnico">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Suporte Técnico Contínuo</h4>
+                                        <p>Acompanhamento e suporte para garantir que sua página esteja sempre online e funcionando perfeitamente.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/training-center.jpg" alt="Consultoria">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Orientações e Ajustes</h4>
+                                        <p>Treinamentos rápidos e orientações para que você saiba como gerenciar e atualizar informações básicas.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/managed-service.jpg" alt="Hospedagem">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Consultoria de Domínio e Hospedagem</h4>
+                                        <p>Auxílio completo na configuração de domínio próprio e hospedagem segura para seu projeto.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="content-section" id="gallery">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad3)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad3)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>BIGPAGES</h3>
+                        <p>Landing Pages</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Voltar ao Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Nosso Portfólio</h2>
+                    <p class="section-subtitle">Conheça alguns dos nossos projetos recentes</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">Todos</button>
+                    <button class="filter-btn" onclick="filterGallery('web', this)">Landing Pages</button>
+                    <button class="filter-btn" onclick="filterGallery('mobile', this)">Mobile First</button>
+                    <button class="filter-btn" onclick="filterGallery('branding', this)">Institucional</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/coding-screen.jpg" alt="Projeto 1">
+                        <div class="gallery-overlay">
+                            <h4>Landing Page para Infoproduto</h4>
+                            <p>Alta Conversão</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-mobile-app.jpg" alt="Projeto 2">
+                        <div class="gallery-overlay">
+                            <h4>Página de Vendas Fitness</h4>
+                            <p>Mobile Otimizado</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/brand-identity.jpg" alt="Projeto 3">
+                        <div class="gallery-overlay">
+                            <h4>Site Institucional</h4>
+                            <p>Prestadores de Serviços</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/managed-service.jpg" alt="Projeto 4">
+                        <div class="gallery-overlay">
+                            <h4>Página de Captura de Leads</h4>
+                            <p>Captura de E-mails</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-optimized-templates.jpg" alt="Projeto 5">
+                        <div class="gallery-overlay">
+                            <h4>Lançamento de Produto</h4>
+                            <p>Countdown & VSL</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/digital-strategy.jpg" alt="Projeto 6">
+                        <div class="gallery-overlay">
+                            <h4>Mini Site Profissional</h4>
+                            <p>Pessoa Física / Autoridade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="content-section" id="testimonials">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad4)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad4)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>BIGPAGES</h3>
+                        <p>Landing Pages</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Voltar ao Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Depoimentos</h2>
+                    <p class="section-subtitle">O que nossos clientes dizem sobre o nosso trabalho</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">A BigPages transformou completamente a forma como captamos clientes. Nossa nova landing page dobrou a taxa de conversão dos nossos anúncios na primeira semana!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Cliente 1">
+                            </div>
+                            <div class="author-info">
+                                <h5>Marcos Vinicius</h5>
+                                <p>Empresário</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Profissionais extremamente competentes! O Elton e o Eduardo entregaram um projeto rápido, bonito e com um design impecável. Recomendo de olhos fechados.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Cliente 2">
+                            </div>
+                            <div class="author-info">
+                                <h5>Juliana Mendes</h5>
+                                <p>Especialista em Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Excelente atendimento e suporte dedicado. A página ficou ultrarrápida e o visual super moderno do jeito que eu precisava para o meu negócio.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Cliente 3">
+                            </div>
+                            <div class="author-info">
+                                <h5>Carlos Eduardo</h5>
+                                <p>Consultor de Negócios</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Precisava de uma landing page urgente para um lançamento e a BigPages entregou antes do prazo com uma qualidade surpreendente. Parceria de sucesso!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Cliente 4">
+                            </div>
+                            <div class="author-info">
+                                <h5>Fernanda Souza</h5>
+                                <p>Produtora Digital</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad5)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad5)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>BIGPAGES</h3>
+                        <p>Landing Pages</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Voltar ao Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Quem Somos</h2>
+                    <p class="section-subtitle">Conheça os fundadores por trás da BigPages</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Inovação e Foco em Resultados</h3>
+                        <p>A <strong>BigPages</strong> nasceu da união e paixão pela tecnologia e pelo desenvolvimento web. Fundada pelos sócios <strong>Elton C.C. Araujo</strong> e <strong>Eduardo C.C. Araujo</strong>, nossa empresa é especializada na criação de soluções de alto impacto em landing pages para empresas e pessoas físicas.</p>
+                        <p>Acreditamos que uma boa página não deve ser apenas bonita, mas sim altamente funcional, capaz de prender a atenção do usuário e converter visitantes em clientes fiéis.</p>
+                        <p>Combinamos design moderno, velocidade de carregamento e estratégias eficientes para destacar o seu negócio no ambiente digital.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-our-team.jpg" alt="Equipe BigPages">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad6)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad6)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>BIGPAGES</h3>
+                        <p>Landing Pages</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Voltar ao Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Vamos criar a landing page ideal para o seu projeto</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu Nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Assunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button class="submit-btn" onclick="window.open('https://wa.me/5514988285751?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20landing%20pages%20da%20BigPages', '_blank')">Enviar Mensagem</button>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Atendimento</h4>
+                                <p>Bauru - SP e Atendimento Online para Todo o Brasil</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>E-mail</h4>
+                                <p>contato@bigpages.com.br</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/5514988285751" target="_blank" style="color: inherit; text-decoration: none;">(14) 98828-5751</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter">
+            <p>© 2026 BigPages. Todos os direitos reservados. Desenvolvido por Elton & Eduardo Araujo.</p>
+        </footer>
+    </div>
+<script src="templatemo-nexa-scripts.js"></script>
+</body>
+</html>
